@@ -1,0 +1,55 @@
+.navContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+}
+
+.logoSide {
+  display: flex;
+}
+
+.title{
+  font-family: 'Lato';
+  font-weight: 900;
+  font-size: 20px;
+  color: #414037;
+}
+
+.navMenuItems{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+}
+
+.navItem{
+
+}
+
+.itemTitle{
+  text-decoration: none;
+  color: #414037;
+  font-family: 'Raleway';
+  font-weight: bold;
+  
+  &:hover{
+    .underScore{
+      width: 100%;
+    }
+  }
+}
+
+.underScore{
+  background-color: #414037;
+  width: 0%;
+  height: 4px;
+  border-radius: 16%;
+  transition: all ease-in-out .5s;
+}
+
+.buttonsContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
