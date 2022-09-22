@@ -28,7 +28,6 @@ const Layout = ({children, pageMeta}) =>{
             {meta.date && <meta property="og:date" content={meta.date} key="og:date" />}
           </Head>
           <Nav/>
-          <hr></hr>
 
           {children}
 
