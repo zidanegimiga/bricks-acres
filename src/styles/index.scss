@@ -1,1 +1,7 @@
 @import "./variables/index.scss";
+
+html, body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
