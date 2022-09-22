@@ -1,12 +1,18 @@
 .navContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 100vw;
 }
 
-.logoSide {
+.navLeft {
   display: flex;
+  margin-left: 32px;
+}
+
+.navRight {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 32px;
 }
 
 .title{
@@ -19,11 +25,12 @@
 .navMenuItems{
   display: flex;
   align-items: center;
-  justify-content: space-between;  
+  justify-content: space-between;
+  margin-right: 16px;  
 }
 
 .navItem{
-
+  margin-right: 28px;
 }
 
 .itemTitle{
