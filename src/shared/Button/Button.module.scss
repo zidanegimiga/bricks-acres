@@ -45,13 +45,14 @@
   background: #414037 0% 0% no-repeat;
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 8px;
-  padding: 24px;
+  padding: 16px;
   display: flex;
   position: relative;
   justify-content: center;
   align-content: center;
-  height: 34px;
+  height: 30px;
   transition: all ease-in-out linear 0.8s;
+  width: 70%;
 
   span{
     font: normal normal bold 20px Lato;
@@ -73,6 +74,51 @@
   &:hover{
     span{
       transform: translateX(-25%);
+    }
+
+    .ButtonArrow{
+      transform: translate(50%);
+      visibility: visible;
+    }
+
+    background-color: #8C8C4C;
+  }
+}
+
+.AnimatedButtonContainerWhite{
+  background: #F3F3EB 0% 0% no-repeat;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  height: 30px;
+  transition: all ease-in-out linear 0.8s;
+  width: 70%;
+
+  span{
+    font: normal normal bold 20px Lato;
+    color: #414037;
+    transition: all ease-in-out linear 0.8s;
+  }
+
+  .ButtonArrow{
+    background-image: url("/arrow-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 36px;
+    height: 24px;
+    z-index: 1;
+    visibility: hidden;
+    transition: all ease-in-out linear 0.8s;
+  }
+
+  &:hover{
+    span{
+      transform: translateX(-25%);
+      color: #F3F3EB;
     }
 
     .ButtonArrow{
