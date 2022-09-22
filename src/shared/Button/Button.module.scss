@@ -1,0 +1,42 @@
+.ButtonContainerFill{
+    padding: 10px;
+    font-family: 'Raleway';
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 32px;
+    width: 120px;
+    background-color: #414037;
+    color: white;
+    height: 24px;
+    cursor: pointer;
+    
+    &:hover{
+      background-color: #8C8C4C;
+      color: #ffffff;
+      border: none;
+      height: 24px;
+    }
+}
+
+.ButtonContainerOutline{
+    padding: 10px;
+    font-family: 'Raleway';
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 32px;
+    width: 120px;
+    color: #414037;
+    border: 4px solid #414037;
+    cursor: pointer;
+
+    
+    &:hover{
+      background-color: #8C8C4C;
+      color: #ffffff;
+      border: 4px solid #8C8C4C;
+    }
+}
