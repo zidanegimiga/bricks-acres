@@ -1,7 +1,13 @@
 import React from "react";
 import styles from "./Button.module.scss";
 
-export default function Button({white, text, variant }) {
+interface ButtonProps {
+  white?: boolean,
+  text: string,
+  variant: string
+}
+
+export default function Button({white, text, variant }: ButtonProps) {
   if (variant === "fill") {
     return (
       <>
