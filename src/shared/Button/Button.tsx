@@ -5,6 +5,7 @@ interface ButtonProps {
   white?: boolean,
   text: string,
   variant: string
+  action?: object
 }
 
 export default function Button({white, text, variant }: ButtonProps) {

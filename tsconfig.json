@@ -28,7 +28,7 @@
     "**/*.ts",
     "**/*.tsx",
     "./src/pages/_document.jsx"
-  ],
+, "src/shared/FormComponents/Form.tsx"  ],
   "exclude": [
     "node_modules"
   ]
