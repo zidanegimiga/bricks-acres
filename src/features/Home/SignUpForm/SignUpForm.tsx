@@ -1,9 +1,22 @@
-import React, { useState } from "react";
+/* eslint-disable @next/next/no-img-element */
+import React, { useState, useRef, Suspense } from "react";
+import useVideoPlayer from "../hooks/useVideoPlayer";
 import Button from "shared/Button";
-import {Form} from "shared/FormComponents/Form";
+
+import { Form } from "shared/FormComponents/Form";
 import styles from "./SignUpForm.module.scss";
 
 const SignUpForm = () => {
+  const videoElement = useRef(null);
+  const {
+    playerState,
+    togglePlay,
+    handleOnTimeUpdate,
+    handleVideoProgress,
+    handleVideoSpeed,
+    toggleMute,
+  } = useVideoPlayer(videoElement);
+
   return (
     <div className={styles.sectionContainer}>
       <div className={styles.sectionTitle}>
@@ -15,11 +28,53 @@ const SignUpForm = () => {
           <div className={styles.contentTitle}>
             <h3>Sign up for Early Access</h3>
             <div className={styles.contentHeadingUnderline}></div>
-            <div className={styles.formContainer}>
-              <Form />
-            </div>
-            <div className={styles.video}>
-              <video />
+            <div className={styles.formAndVideoContainer}>
+              <div className={styles.formContainer}>
+                <Form />
+              </div>
+                <div className={styles.video}>
+                  <video
+                    src="https://sample-videos.com/video123/mp4/480/big_buck_bunny_480p_5mb.mp4"
+                    ref={videoElement}
+                    onTimeUpdate={handleOnTimeUpdate}
+                  />
+                  <div className={styles.controls}>
+                    <div className={styles.actions}>
+                      <button onClick={togglePlay} className={styles.btnPlay}>
+                        {!playerState.isPlaying ? (
+                        <img alt="Play" width={24} height={24} src="/bx-play.svg"/>
+                        ) : (
+                          <img alt="Play" width={24} height={24} src="/bx-pause.svg"/>
+                        )}
+                      </button>
+                    </div>
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      value={playerState.progress}
+                      onChange={(e) => handleVideoProgress(e)}
+                      className={styles.inputRange}
+                    />
+                    <select
+                      className={styles.velocity}
+                      value={playerState.speed}
+                      onChange={(e) => handleVideoSpeed(e)}
+                    >
+                      <option value="0.50">0.50x</option>
+                      <option value="1">1x</option>
+                      <option value="1.25">1.25x</option>
+                      <option value="2">2x</option>
+                    </select>
+                    <button className={styles.volumeBtn} onClick={toggleMute}>
+                      {!playerState.isMuted ? (
+                        <img alt="Play" width={24} height={24} src="/bxs-volume-full.svg"/>
+                      ) : (
+                        <img alt="Play" width={24} height={24} src="/bxs-volume-mute.svg"/>
+                      )}
+                    </button>
+                  </div>
+                </div>             
             </div>
           </div>
         </div>
@@ -30,59 +85,3 @@ const SignUpForm = () => {
 };
 
 export default SignUpForm;
-
-{/* <form>
-  <fieldset className={styles.inputGroup}>
-    <input
-      name="firstName"
-      id="firstName"
-      type="text"
-      placeholder="First Name"
-      required
-      className={styles.input}
-    />
-    <input
-      name="email"
-      id="email"
-      type="email"
-      placeholder="Email"
-      required
-      className={styles.input}
-    />
-  </fieldset>
-  <fieldset className={styles.radioInputGroup}>
-    <label htmlFor="tenant" className={styles.radioInputLabel}>
-      <input
-        name="tenant"
-        id="tenant"
-        type="checkbox"
-        className={styles.radioInput}
-        value="tenant"
-      />
-      tenant
-    </label>
-    <label htmlFor="developer" className={styles.radioInputLabel}>
-      <input
-        name="developer"
-        id="developer"
-        type="checkbox"
-        className={styles.radioInput}
-        value="developer"
-      />
-      Developer
-    </label>
-    <label htmlFor="investor" className={styles.radioInputLabel}>
-      <input
-        name="investor"
-        id="investor"
-        type="checkbox"
-        className={styles.radioInput}
-        value="investor"
-      />
-      Investor
-    </label>
-  </fieldset>
-  <button className={styles.signUpButton} type="submit">
-    Login
-  </button>
-</form>; */}

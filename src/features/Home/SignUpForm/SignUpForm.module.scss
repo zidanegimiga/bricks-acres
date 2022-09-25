@@ -14,7 +14,7 @@
   margin-bottom: 48px;
 
   h2 {
-    font: normal normal bold 30px Lato;
+    font: normal normal bold 24px Lato;
     color: #414037;
     text-align: center;
     margin-bottom: 8px;
@@ -22,7 +22,7 @@
 }
 
 .sectionHeadingUnderline {
-  width: 560px;
+  width: 440px;
   background-color: #bfbf69;
   height: 6px;
   border-radius: 8px;
@@ -32,10 +32,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 64px;
+  padding-right: 32px;
+  padding-left: 32px;
 
   h3{
-    font: normal normal bold 24px Lato;
+    font: normal normal bold 32px Lato;
     color: #414037;
     text-align: center;
     margin-bottom: 8px;
@@ -43,13 +44,120 @@
 }
 
 .contentHeadingUnderline{
-  width: 260px;
+  width: 360px;
   background-color: #413737;
   height: 6px;
   border-radius: 8px;  
 }
 
+.formAndVideoContainer{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .formContainer{
-  width: 45%;
+  width: 40%;
   margin-top: 48px;
+}
+
+.video {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 16px;
+  margin-right: 0px;
+}
+
+.video:hover{
+  .controls{
+    transform: translateY(-80%);
+  }
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 85%;
+  padding: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transform: translateY(150%);
+  transition: all 0.3s ease-in-out;
+}
+
+.btnPlay{
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f3eb;
+  outline: none;
+  box-shadow: none;
+  border-radius: 50%;
+}
+
+.volumeBtn{
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f3eb;
+  outline: none;
+  box-shadow: none;
+  border-radius: 50%;
+  padding: 4px;  
+}
+
+.inputRange input[type="range"] {
+  -webkit-appearance: none !important;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  height: 4px;
+  width: 100%;
+}
+
+.inputRange{
+  input[type="range"]::-webkit-range-thumb {
+    -webkit-appearance: none !important;
+    cursor: pointer;
+    height: 4px;
+  }
+}
+
+.inputRange {
+  input[type="range"]::-moz-range-progress {
+    background: #ffffff;
+  }
+}
+
+.velocity {
+  position: relative;
+  appearance: none;
+  background: none;
+  color: white;
+  outline: none;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+
+  option{
+    background-color: #312f2f;
+    font-size: 10px;
+    padding-left: 4px;
+    font-family: "Lato";
+    font-weight: bold;
+  }
 }
