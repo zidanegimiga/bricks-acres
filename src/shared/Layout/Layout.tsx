@@ -18,7 +18,7 @@ const Layout = ({children, pageMeta}) =>{
     return(
         <>
           <Head>
-            <title>{meta.title}</title>
+            <title>{router.pathname === "/" ? meta.title : "Contact us"}</title>
             <link rel="icon" href="/favicon.png" />
             <meta name="description" content={meta.description} key="title" />
             <meta property="og:url" content={`http://localhost:3000${router.asPath}`} key="url" />
@@ -30,8 +30,6 @@ const Layout = ({children, pageMeta}) =>{
           <Nav/>
 
           {children}
-
-          <hr></hr>
           {router.pathname === '/contact' || <Footer />}
         </>
     )
