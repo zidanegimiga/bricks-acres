@@ -12,6 +12,7 @@
   padding-top: 32px;
   padding-bottom: 72px;
   padding-left: 32px;
+  background-image: url("/abstractMapContactPage.png");
 
   h1{
     color: #F3F3EB;
@@ -121,5 +122,53 @@
 
   &:hover{
     background: #8C8C4C 0% 0% no-repeat padding-box;    
+  }
+}
+
+.iconFacebook{
+  background: url("/Facebook.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 56px;
+  height: 56px;
+
+  &:hover{
+    background: url("/FacebookHover.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.iconWhatsApp{
+  background: url("/WhatsApp.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 56px;
+  height: 56px;
+
+  &:hover{
+    background: url("/WhatsAppHover.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.iconInstagram{
+  background: url("/Instagram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 56px;
+  height: 56px;
+
+  &:hover{
+    background: url("/InstagramHover.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 56px;
+    height: 56px;
   }
 }

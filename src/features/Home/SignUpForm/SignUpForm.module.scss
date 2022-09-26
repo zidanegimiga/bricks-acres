@@ -5,6 +5,7 @@
   z-index: 0;
   position: relative;
   padding-top: 72px;
+  background-image: url("/abstractMapSignUp.png");
 }
 
 .sectionTitle {
@@ -31,9 +32,11 @@
 .contentTitle {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding-right: 32px;
   padding-left: 32px;
+  width: 100%;
+  justify-content: center;
 
   h3{
     font: normal normal bold 32px Lato;
@@ -53,11 +56,11 @@
 .formAndVideoContainer{
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .formContainer{
-  width: 40%;
+  width: 60%;
   margin-top: 48px;
 }
 
