@@ -7,10 +7,9 @@
     text-align: center;
     margin-right: 32px;
     width: 120px;
-    height: 24px;
     background-color: #414037;
     color: white;
-
+    border: none;
     cursor: pointer;
 
     span{
@@ -21,7 +20,6 @@
       background-color: #8C8C4C;
       color: #ffffff;
       border: none;
-      height: 24px;
     }
 }
 
@@ -60,7 +58,7 @@
   position: relative;
   justify-content: center;
   align-content: center;
-  height: 30px;
+  border: none;
   transition: all ease-in-out 0.4s;
   width: 70%;
   cursor: pointer;
@@ -106,9 +104,9 @@
   position: relative;
   justify-content: center;
   align-content: center;
-  height: 30px;
   transition: all ease-in-out 0.4s;
   width: 50%;
+  border: none;
   cursor: pointer;
 
   span{

@@ -21,7 +21,7 @@ const WhoWeAre = () => {
           <div className={styles.sectionDescription}>
             <p>By combining our deep knowledge and understanding of the real estate scene, We believe we have found the undervalued properties being overlooked by the general market and transform them into catalysts of change.</p>
           </div>
-          <Button variant="animated" text="Sign up for Early Access"/>          
+          <Button variant="animated" text="Sign up for Early Access" route="/#signUp"/>          
         </div>
         <div className={styles.sectionContentLeft}>
           <div className={styles.imageBackground}>

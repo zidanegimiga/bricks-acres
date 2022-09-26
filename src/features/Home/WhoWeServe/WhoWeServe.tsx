@@ -25,7 +25,7 @@ const WhatWeDo = () => {
       </div>
       <div className={styles.sectionFooter}>
         <p>Be notified when this exciting product launches.</p>
-        <Button white variant="animated" text="Be the first to know"/>
+        <Button white variant="animated" text="Be the first to know" route="/#signUp"/>
       </div>
     </div>
   )

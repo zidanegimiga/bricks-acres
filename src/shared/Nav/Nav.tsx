@@ -42,8 +42,8 @@ const Nav = () => {
           }
         </div>
         <div className={styles.buttonsContainer}>
-          <Button text="CONTACT US" variant="outline" action={(e) => contactRoute(e)}/>
-          <Button text="SIGN UP" variant="fill" action={(e) => signUpRoute(e)}/>
+          <Button text="CONTACT US" variant="outline" route="/contact"/>
+          <Button text="SIGN UP" variant="fill" route="/#signUp"/>
         </div>
       </div>
     </div>

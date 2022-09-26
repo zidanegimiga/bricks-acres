@@ -1,9 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
+import {useRouter} from 'next/router'
 import styles from './WhoWeAre.module.scss'
 import Button from 'shared/Button';
+import Link from 'next/link';
 
 const WhoWeAre = () => {
+  const router = useRouter();
+  function handleRoute(){
+    router.push("/#signUp");
+  }
+
   return (
     <div className={styles.sectionContainer} id="aboutUs">
       <div className={styles.bgImageContainer}>
@@ -28,7 +35,7 @@ const WhoWeAre = () => {
           <div className={styles.sectionDescription}>
             <p>Bricks & Acres is an upcoming property investment platform that allows users to discover real estate property with much ease.</p>
           </div>
-          <Button white variant="animated" text="Sign up for Early Access"/>          
+          <Button white variant="animated" text="Sign up for Early Access" route="/#signUp"/>        
         </div>
       </div>
     </div>
