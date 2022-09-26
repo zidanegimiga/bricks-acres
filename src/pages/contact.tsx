@@ -158,35 +158,19 @@ export default function Contact() {
               <div className={styles.underline}></div>
               <h4 className={styles.title}>Follow us</h4>
               <div className={styles.social}>
-                <div className={styles.social}>
-                  <Image
-                    src="/instagram.png"
-                    width={24}
-                    height={24}
-                    alt="instagram"
-                  />
+                <div className={styles.iconInstagram}>
                 </div>
                 <p>Instagram</p>
               </div>
               <div className={styles.social}>
                 <div className={styles.social}>
-                  <Image
-                    src="/facebook.png"
-                    width={24}
-                    height={24}
-                    alt="instagram"
-                  />
+                  <div className={styles.iconFacebook}>
+                  </div>
                 </div>
                 <p>Facebook</p>
               </div>
               <div className={styles.social}>
-                <div className={styles.social}>
-                  <Image
-                    src="/instagramDark.png"
-                    width={24}
-                    height={24}
-                    alt="instagram"
-                  />
+                <div className={styles.iconWhatsApp}>
                 </div>
                 <p>WhatsApp</p>
               </div>

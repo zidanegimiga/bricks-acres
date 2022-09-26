@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 62 62">
+  <g id="Instagram" transform="translate(1 1)">
+    <circle id="Ellipse_5" data-name="Ellipse 5" cx="30" cy="30" r="30" fill="none" stroke="#525252" stroke-width="2"/>
+    <g id="Group_126" data-name="Group 126" transform="translate(10.618 10.582)">
+      <g id="Group_125" data-name="Group 125" transform="translate(0 0)">
+        <path id="Path_45" data-name="Path 45" d="M1859.087,2682.535a2.273,2.273,0,1,0,2.273,2.272A2.273,2.273,0,0,0,1859.087,2682.535Z" transform="translate(-1829.443 -2675.614)" fill="#525252"/>
+        <path id="Path_46" data-name="Path 46" d="M1705.439,2709.525a9.546,9.546,0,1,0,9.546,9.546A9.557,9.557,0,0,0,1705.439,2709.525Zm0,15.661a6.115,6.115,0,1,1,6.115-6.115A6.122,6.122,0,0,1,1705.439,2725.186Z" transform="translate(-1685.898 -2699.689)" fill="#525252" stroke="#525252" stroke-width="1"/>
+        <path id="Path_47" data-name="Path 47" d="M1630.458,2657.2h-15.476a11.657,11.657,0,0,1-11.644-11.644v-15.477a11.656,11.656,0,0,1,11.644-11.644h15.476a11.657,11.657,0,0,1,11.644,11.644v15.477A11.657,11.657,0,0,1,1630.458,2657.2Zm-15.476-35.117a8.005,8.005,0,0,0-8,8v15.477a8.005,8.005,0,0,0,8,8h15.476a8.006,8.006,0,0,0,8-8v-15.477a8.006,8.006,0,0,0-8-8Z" transform="translate(-1603.338 -2618.441)" fill="#525252" stroke="#525252" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
