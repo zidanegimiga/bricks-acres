@@ -1,0 +1,53 @@
+.heroContainer{
+  display: flex;
+  background-color: #F3F3EB;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.heroLeft{
+  margin-left: 48px;
+  width: 40%;
+
+  p{
+    text-align: left;
+    font: normal normal bold 20px Lato;
+    color: #8C8C4C;
+  }
+
+  a{
+    text-decoration: none;
+  }
+}
+
+.title{
+  font: normal normal 900 60px Lato;
+  color: #414037;
+
+  span{
+    text-decoration: underline;
+    color: #BFBF69;
+  }
+}
+
+.subHeading{
+  text-align: left;
+  font: normal normal bold 20px Lato;
+  line-height: 34px;
+  letter-spacing: 0px;
+  color: #414037;
+  margin-bottom: 32px;
+}
+
+.heroRight{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 900px;
+  position: absolute;
+  right: -5%;
+  top: 20%;
+  z-index: 1;
+}

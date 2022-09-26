@@ -1,0 +1,104 @@
+.sectionContainer{
+    background-color: #414037;
+    width: 100%;  
+    z-index: 0;
+    position: relative;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.sectionTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+      font: normal normal bold 24px Lato;
+      color: #EDEBEB;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+}
+
+.sectionHeadingUnderline{
+  width: 240px;
+  background-color: #BFBF69;
+  height: 6px;
+  border-radius: 8px;
+}
+
+.sectionContent{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 32px;
+    padding: 32px;
+}
+
+.clientCard{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 28%;
+    border: 2px solid #F3F3EB;
+    border-radius: 16px;
+    padding: 14px;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+
+    h3{
+      text-align: left;
+      font: normal normal bold 40px Lato;
+      letter-spacing: 0px;
+      color: #BFBF69;
+      margin-bottom: 0;
+      margin-top: 4px;
+    }
+    
+    hr{
+      width: 0px;
+      background-color: #F3F3EB;
+      height: 2px;
+      visibility: hidden;
+      margin-left: 0;
+      transition: all ease-in-out 0.5s;
+    }
+
+    p{
+      margin-top: 16px;
+      text-align: left;
+      font: normal normal normal 16px Raleway;
+      line-height: 24px;
+      letter-spacing: 0px;
+      color: #F3F3EB;
+    }
+
+    &:hover{
+      background: transparent linear-gradient(313deg, #41403726 0%, #292929B3 100%) 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #6e6e6e29;
+      hr{
+        visibility: visible;
+        width: 300px;
+      }        
+    }
+}
+
+.iconContainer{
+    width: 80px;
+    height: 72px;
+}
+
+.sectionFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p{
+      text-align: center;
+      font: normal normal 600 16px Raleway;
+      color: #F3F3EB;
+    }
+}

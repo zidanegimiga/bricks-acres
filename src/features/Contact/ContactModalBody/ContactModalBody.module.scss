@@ -1,0 +1,53 @@
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.modalContentBody {
+  h1 {
+    text-align: center;
+    font: normal normal normal 56px Fontjek;
+    letter-spacing: 0px;
+    color: #525252;
+  }
+}
+
+.modalFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    text-align: center;
+    font: normal normal bold 24px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #525252;
+    margin-bottom: 6px;
+  }
+}
+
+.titleUnderline {
+  width: 160px;
+  background-color: #525252;
+  height: 6px;
+  border-radius: 8px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 16px;
+}
+
+.socialButton {
+  margin-top: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #BFBF69;
+    border-radius: 4px;
+  }
+}

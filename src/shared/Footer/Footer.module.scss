@@ -1,0 +1,90 @@
+.sectionContainer{
+  background-color: #414037;
+  padding-top: 64px;
+}
+
+.footerContainer{
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.sectionTitle {
+  color: #bfbf69;
+  font: normal normal bold 28px Source Sans Pro;
+}
+
+.footerContacts{
+  position: relative;
+}
+
+.contactUs {
+  font: normal normal bold 20px Raleway;
+  letter-spacing: 0px;
+  color: #edebeb;
+  margin-top: 8px;
+}
+
+.contact{
+  font: normal normal normal 20px Raleway;
+  letter-spacing: 0px;
+  color: #EDEBEB;
+}
+
+.socialButtons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialButton{
+  &:hover{
+    background-color: #BFBF69;
+    border-radius: 4px;
+  }
+}
+
+.arrowUpContainer{
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 4px;
+  cursor: pointer;
+
+  &:hover{
+    background-color: #BFBF69;
+  }
+}
+
+.scrollToTopContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+        font: normal normal normal 20px Raleway;
+        color: #EDEBEB;
+    }
+}
+
+.footerIllustration{
+  width: 100%;
+  margin-top: 48px;
+}
+
+.copyright{
+  padding-bottom: 24px;
+  padding-right: 24px;
+  p{
+    text-align: right;
+    font: normal normal normal 16px Raleway;
+    letter-spacing: 0px;
+    color: #EDEBEB;
+  }
+}
