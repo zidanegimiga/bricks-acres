@@ -26,7 +26,7 @@ const Footer = () => {
                 <Image src="/facebook.png" width={32} height={32} alt="facebook icon"/>
               </div>
               <div className={styles.socialButton}>
-                <Image src="/whatsapp.png" width={32} height={32} alt="whatsapp icon"/>
+                <Image src="/whatsApp.png" width={32} height={32} alt="whatsapp icon"/>
               </div>
               <div className={styles.socialButton}>
                 <Image src="/instagram.png" width={32} height={32} alt="instagram icon"/>
