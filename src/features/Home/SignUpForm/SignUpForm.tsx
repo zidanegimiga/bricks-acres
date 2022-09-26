@@ -1,12 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useRef, Suspense } from "react";
 import useVideoPlayer from "../hooks/useVideoPlayer";
+import Modal from '../../../shared/Modal'
 import Button from "shared/Button";
-
 import { Form } from "shared/FormComponents/Form";
 import styles from "./SignUpForm.module.scss";
+import SignUpModalBody from '../SignUpModalBody'
 
 const SignUpForm = () => {
+  const [modal, showModal] = useState(false);
   const videoElement = useRef(null);
   const {
     playerState,
@@ -18,7 +20,7 @@ const SignUpForm = () => {
   } = useVideoPlayer(videoElement);
 
   return (
-    <div className={styles.sectionContainer}>
+    <div className={styles.sectionContainer} id="signUp">
       <div className={styles.sectionTitle}>
         <h2>PRODUCT DEVELOPMENT ONGOING</h2>
         <div className={styles.sectionHeadingUnderline}></div>
@@ -30,7 +32,7 @@ const SignUpForm = () => {
             <div className={styles.contentHeadingUnderline}></div>
             <div className={styles.formAndVideoContainer}>
               <div className={styles.formContainer}>
-                <Form />
+                <Form showModal={()=> showModal(!modal)}/>
               </div>
                 <div className={styles.video}>
                   <video
@@ -80,6 +82,12 @@ const SignUpForm = () => {
         </div>
         <div className={styles.sectionContentLeft}></div>
       </div>
+      {
+        modal && 
+        <Modal modal showModal={showModal}>
+          <SignUpModalBody />
+        </Modal>
+      }
     </div>
   );
 };
