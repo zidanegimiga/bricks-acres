@@ -1,0 +1,45 @@
+.modalOverlay {
+  background-color: rgba(0, 0, 0, 0.82);
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  bottom: -430%;
+}
+
+.centered {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+}
+
+.modalBody {
+  padding: 72px;
+  background: rgb(240, 239, 239);
+  color: white;
+  width: 100%;
+  z-index: 10;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+}
+
+.closeBtn{
+  background-image: url("/closeBtnDark.svg");
+  background-repeat: no-repeat;
+  border: none;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: -25%;
+  top: 2%;
+  cursor: pointer;
+
+  &:hover{
+    background-image: url("/closeBtnGreen.svg");    
+  }
+
+}
