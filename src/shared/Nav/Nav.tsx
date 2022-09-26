@@ -1,14 +1,30 @@
 import React from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
+import {useRouter} from 'next/router'
 import styles from './Nav.module.scss';
 import Button from 'shared/Button';
 
 const Nav = () => {
+  const router = useRouter();
+  const contactRoute = (e) =>{
+    e.preventDefault();
+    router.push("/contact");
+    console.log("Routed");
+  }
+
+  const signUpRoute = (e) =>{
+    e.preventDefault();
+    router.push("/#signUp");
+    console.log("Routed");
+  }
+
   return (
     <div className={styles.navContainer}>
       <div className={styles.navLeft}>
-        <Image width={78} height={40} src="/logo.png" alt="Bricks and Acres Logo"/>
+         <Link href="/">
+           <Image width={78} height={40} src="/logo.png" alt="Bricks and Acres Logo"/>
+         </Link>
         <p className={styles.title}>Bricks and Acres</p>
       </div>
       <div className={styles.navRight}>
@@ -26,8 +42,8 @@ const Nav = () => {
           }
         </div>
         <div className={styles.buttonsContainer}>
-          <Button text="CONTACT US" variant="outline"/>
-          <Button text="SIGN UP" variant="fill"/>
+          <Button text="CONTACT US" variant="outline" action={(e) => contactRoute(e)}/>
+          <Button text="SIGN UP" variant="fill" action={(e) => signUpRoute(e)}/>
         </div>
       </div>
     </div>
@@ -37,11 +53,11 @@ const Nav = () => {
 const navItems = [
   {
     name: "ABOUT US",
-    link: "/about-us"
+    link: "/#aboutUs"
   },
   {
     name: "OUR SOLUTION",
-    link: "/our-solution"
+    link: "/#ourSolution"
   },
 ]
 

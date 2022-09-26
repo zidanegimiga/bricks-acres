@@ -16,6 +16,10 @@
     font: normal normal bold 20px Lato;
     color: #8C8C4C;
   }
+
+  a{
+    text-decoration: none;
+  }
 }
 
 .title{
@@ -43,7 +47,7 @@
   width: 50%;
   height: 900px;
   position: absolute;
-  right: -2%;
+  right: -5%;
   top: 20%;
   z-index: 1;
 }

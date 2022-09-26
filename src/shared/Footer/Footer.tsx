@@ -34,8 +34,10 @@ const Footer = () => {
             </div>        
           </div>
           <div className={styles.scrollToTopContainer}>
-            <div className={styles.arrowUpContainer}>
-              <Image src="/arrow-up.png" alt="Arrow up icon" width={32} height={32}/>
+            <div className={styles.arrowUpContainer} >
+              <Link href="/">
+                <Image src="/arrow-up.png" alt="Arrow up icon" width={32} height={32}/>
+              </Link>
             </div>
             <p>Scroll to top</p>
           </div>

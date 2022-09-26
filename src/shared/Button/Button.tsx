@@ -5,20 +5,20 @@ interface ButtonProps {
   white?: boolean,
   text: string,
   variant: string
-  action?: object
+  action?: React.MouseEventHandler<HTMLButtonElement>
 }
 
-export default function Button({white, text, variant }: ButtonProps) {
+export default function Button({white, text, variant, action }: ButtonProps) {
   if (variant === "fill") {
     return (
       <>
-        <div className={styles.ButtonContainerFill}>{text}</div>
+        <div className={styles.ButtonContainerFill} onClick={action}>{text}</div>
       </>
     );
   } 
   else if (variant === "animated" && !white) {
     return (
-      <div className={styles.AnimatedButtonContainer}>
+      <div className={styles.AnimatedButtonContainer} onClick={action}>
         <span>{text}</span>
         <div className={styles.ButtonArrow}></div>
       </div>
@@ -26,7 +26,7 @@ export default function Button({white, text, variant }: ButtonProps) {
   }
   else if(white && variant === "animated"){
     return (
-      <div className={styles.AnimatedButtonContainerWhite}>
+      <div className={styles.AnimatedButtonContainerWhite} onClick={action}>
         <span>{text}</span>
         <div className={styles.ButtonArrow}></div>
       </div>
@@ -35,7 +35,12 @@ export default function Button({white, text, variant }: ButtonProps) {
   else {
     return (
       <>
-        <div className={styles.ButtonContainerOutline}>{text}</div>
+        <div 
+          className={styles.ButtonContainerOutline}
+          onClick={action}
+        >
+          {text}
+        </div>
       </>
     );
   }
