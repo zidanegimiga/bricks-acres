@@ -1,4 +1,5 @@
-import React, { useRef, useEffect, ChangeEvent, useState } from "react";
+import React, { useState } from "react";
+import { useRouter} from 'next/router'
 import styles from "./Form.module.scss";
 
 export const Input = ({error, label, ...rest }) => {
@@ -18,6 +19,41 @@ export const Input = ({error, label, ...rest }) => {
   );
 };
 
+export const Textarea = ({error, label, ...rest }) => {
+  const [touched, setTouched] = useState(false);
+
+  return (
+    <>
+      <textarea
+        className={styles.formInputTextArea}
+        {...rest}
+        onBlur={() => setTouched(true)}
+        placeholder={label}
+      />
+      <span className={styles.textDanger}>{touched && error}</span>
+    </>
+  );
+};
+
+export const RadioButton = (props) => {
+  const { changed, id, isSelected, label, value } = props;
+  return (
+    <div className={styles.radioButtonContainer}>
+      <div className={styles.radioButton}>
+        <input
+          id={id}
+          onChange={changed}
+          value={value}
+          type="radio"
+          checked={isSelected}
+        />
+        <label htmlFor={id}>{label}</label>
+      </div>
+    </div>
+  );
+};
+
+//Sign UP form
 interface formProps {
   name: string,  
   email: string,
@@ -34,7 +70,7 @@ const initialFormValues: formProps = {
   tenant: false   
 }
 
-export const Form = () => {
+export const Form = ({showModal}) => {
   const [formInput, setFormInput] = useState(initialFormValues)
   const [error, setError] = useState({
     status: false,
@@ -77,16 +113,19 @@ export const Form = () => {
 
   function submissionAction(){
     const data = formInput;
+    showModal();
+    router.push("/")
     console.log(data);
-    setError({ status: true, msg: "Signed up successfully!", type: 'success' })
     setTimeout(() => resetForm(), 5000)
   }
+
+  const router = useRouter()
 
   // Handle Form Submission
   const handleSubmit = (e) => {
     e.preventDefault();
     if (formInput.name && formInput.email) {
-      submissionAction()
+      submissionAction();
     } else {
       setError({ status: true, msg: "All Fields are Required", type: 'error' })
     }
@@ -114,7 +153,7 @@ export const Form = () => {
             error
           />
         </div>
-        <div className={styles.radioInputGroup}>        
+        <div className={styles.checkboxInputGroup}>        
           <div className={styles.checkboxWrapper}>
             <input
                 type="checkbox"
