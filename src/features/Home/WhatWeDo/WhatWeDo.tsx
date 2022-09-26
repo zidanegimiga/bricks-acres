@@ -5,7 +5,7 @@ import Button from 'shared/Button';
 
 const WhoWeAre = () => {
   return (
-    <div className={styles.sectionContainer}>
+    <div className={styles.sectionContainer} id="ourSolution">
       <div className={styles.bgImageContainer}>
         <Image src="/strokedCircleLeft.png" width={931} height={737} alt="stroked circle"/>
       </div>
