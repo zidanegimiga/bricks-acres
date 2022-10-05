@@ -9,6 +9,10 @@
     font: normal normal normal 56px Fontjek;
     letter-spacing: 0px;
     color: #525252;
+
+    @media (max-width: 426px) {
+      font-size: 32px;   
+    }
   }
 }
 

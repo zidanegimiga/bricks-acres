@@ -46,6 +46,11 @@ const Nav = () => {
           <Button text="SIGN UP" variant="fill" route="/#signUp"/>
         </div>
       </div>
+      <div className={styles.hamburgerContainer}>
+        <div className={styles.hamburgerLine}></div>
+        <div className={styles.hamburgerLine}></div>
+        <div className={styles.hamburgerLine}></div>
+      </div>
     </div>
   )
 }
