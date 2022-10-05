@@ -93,6 +93,20 @@
 
     background-color: #8C8C4C;
   }
+
+  @media (max-width: 426px) {
+    width: 85%;
+    
+    &:hover{
+      span{
+        transform: translateX(-10%);
+      }
+  
+      .ButtonArrow{
+        transform: translate(20%);
+      }
+    }
+  }
 }
 
 .AnimatedButtonContainerWhite{
