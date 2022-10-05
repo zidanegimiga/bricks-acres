@@ -5,7 +5,11 @@
     position: relative;
     padding-top: 156px;
     padding-bottom: 156px;
-    padding-left: 72px;
+    padding-left: 132px;
+
+    @media (max-width: 1441px) {
+      padding-left: 64px;      
+    }
 
     @media (max-width: 1025px) {
       padding-left: 48px;      

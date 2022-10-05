@@ -105,14 +105,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;
-  height: 800px;
+  height: 600px;
   position: absolute;
-  right: -1%;
-  top: 15%;
+  right: -10%;
+  top: 5%;
   z-index: 1;
 
   @media(max-width: 1441px) {
     height: 560px;
+    right: -1%;
+    top: 15%;
+    z-index: 1;
   }
 
   @media(max-width: 769px) {
