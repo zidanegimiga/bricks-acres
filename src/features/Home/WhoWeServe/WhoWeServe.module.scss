@@ -36,6 +36,10 @@
     justify-content: space-around;
     margin-top: 32px;
     padding: 32px;
+
+    @media (max-width: 769px) {
+      flex-direction: column;      
+    }
 }
 
 .clientCard{
@@ -83,6 +87,31 @@
         visibility: visible;
         width: 300px;
       }        
+    }
+
+    @media (max-width: 769px) {
+      width: 80%;
+      margin-bottom: 32px;
+      align-items: center;
+      margin-left: 40px;
+      
+      p{
+        text-align: center;
+      }
+      
+      &:hover{
+        hr{
+          display: none;
+        }
+      }
+    }
+
+    @media (max-width: 769px) {
+      margin-left: 16px;
+    }
+
+    @media (max-width: 769px) {
+      margin-left: 8px;
     }
 }
 
