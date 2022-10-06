@@ -23,6 +23,21 @@
         border-bottom: 8px solid #BFBF69;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
+
+        @media (max-width: 426px) {
+          text-decoration: underline;
+          border: none;
+          color: #BFBF69;    
+        }
+    }
+
+    @media (max-width: 426px) {
+      font-size: 40px;    
+    }
+
+    @media (max-width: 426px) {
+      font-size: 32px;
+      margin-right: 32px;    
     }
   }
 }
@@ -33,6 +48,11 @@
   font-weight: 400;
   color: #F3F3EB;
   margin-top: 56px;
+
+  @media (max-width: 426px) {
+    font-size: 20px;
+    margin-top: 32px;    
+  }
 }
 
 .contentContainer{
@@ -40,6 +60,16 @@
   padding-right: 32px;
   padding-left: 32px;
   justify-content: space-between;
+
+  @media (max-width: 769px) {
+    flex-direction: column;
+    margin-right: 48px;  
+  }
+
+  @media (max-width: 426px) {
+    padding-right: 16px;
+    padding-left: 16px;    
+  }
 }
 
 .contactForm{
@@ -49,6 +79,11 @@
   padding: 24px;
   width: 60%;
   margin-top: -48px;
+
+  @media (max-width: 769px) {
+    width: 100%;
+    margin-bottom: 128px;    
+  }
 }
 
 .contactsAndSocials{
@@ -58,6 +93,10 @@
   padding: 24px;
   width: 25%;
   margin-top: -48px;
+
+  @media (max-width: 769px) {
+    width: 100%;   
+  }
 }
 
 .title{
@@ -70,6 +109,10 @@
 .radioBtns{
   display: flex;
   justify-content: flex-start;
+
+  @media (max-width: 426px) {
+    flex-direction: column;    
+  }
 }
 
 .textInputGroup{

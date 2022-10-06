@@ -5,24 +5,81 @@
     z-index: 0;
     position: relative;
     padding-top: 156px;
-    padding-left: 64px;
+    padding-left: 132px;
+    padding-right: 132px;
+
+    @media (max-width: 1025px) {
+      padding-top: 108px;
+      padding-left: 72px;
+      padding-right: 72px;            
+    }
+
+    @media (max-width: 769px) {
+      padding-top: 96px;
+      padding-left: 32px;
+      padding-right: 0px;            
+    }
+
+    @media (max-width: 769px) {
+      padding-top: 96px;
+      padding-left: 16px;
+      padding-right: 0px;            
+    }
 }
 
 .bgImageContainer{
     width: 550px;
     height: 750px;
     position: absolute;
-    right: 11%;
+    right: 20%;
     top: -2%;
+
+    @media (max-width: 1025px) {
+      width: 550px;
+      height: 750px;
+      position: absolute;
+      right: 10%;
+      top: -2%;                  
+    }
+
+    @media (max-width: 769px) {
+      width: 500px;
+      height: 650px;
+      position: absolute;
+      right: 28%;
+      top: 40%;                  
+    }
+
+    @media (max-width: 426px) {
+      display: none;                  
+    }
 }
 
 .sectionContent{
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 769px) {
+    flex-direction: column;            
+  }
 }
 
 .sectionContentLeft{
-    margin-right: 148px;
+  margin-right: 300px;
+
+  @media (max-width: 1025px) {
+    margin-right: 96px;            
+  }
+
+  @media (max-width: 769px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;          
+  }
+
+  @media (max-width: 426px) {
+    margin-right: 32px;            
+  }
 }
 
 .imageBackground{
@@ -48,9 +105,14 @@
 }
 
 .sectionContentRight{
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 769px) {
+    width: 100%;
+    margin-bottom: 132px;           
+  }
 }
 
 .sectionSubHeading{
@@ -72,7 +134,12 @@
     h2{
       font: normal normal bold 40px Lato;
       color: #3E3D33;
+
+      @media (max-width: 426px) {
+        font-size: 32px;            
+      }
     }
+
     span{
       color: #BFBF69;        
     }
@@ -84,5 +151,9 @@
     font: normal normal normal 20px Raleway;
     color: #3E3D33;
     line-height: 32px;
+  }
+
+  @media (max-width: 426px) {
+    width: 95%;            
   }
 }

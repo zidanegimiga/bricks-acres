@@ -12,7 +12,7 @@ export default function Index() {
     <WhoWeAre />    
     <WhatWeDo />
     <WhoWeServe />
-    <SignUpForm />    
+    <SignUpForm />
   </>
  )
 }

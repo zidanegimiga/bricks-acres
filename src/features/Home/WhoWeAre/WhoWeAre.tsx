@@ -24,6 +24,7 @@ const WhoWeAre = () => {
             </div>
           </div>
         </div>
+        <div className={styles.sectionContentLeftMobile}></div>
         <div className={styles.sectionContentRight}>
           <div className={styles.sectionSubHeading}>
             <p>WHO WE ARE</p>

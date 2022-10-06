@@ -15,6 +15,22 @@
   position: absolute;
   top: 10%;
   left: 30%;
+
+  @media (max-width: 1025px) {
+    left: 22%;    
+  }
+
+  @media (max-width: 769px) {
+    left: 15%;    
+  }
+
+  @media (max-width: 376px) {
+    left: 12%;   
+  }
+
+  @media (max-width: 321px) {
+    left: 8%;   
+  }
 }
 
 .modalBody {
@@ -25,6 +41,14 @@
   z-index: 10;
   border-radius: 16px;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+
+  @media (max-width: 426px) {
+    padding: 32px;   
+  }
+
+  @media (max-width: 321px) {
+    padding: 24px;   
+  }
 }
 
 .closeBtn{
@@ -37,6 +61,11 @@
   right: -25%;
   top: 2%;
   cursor: pointer;
+
+  @media (max-width: 426px) {
+    right: -20%;
+    top: 3%;   
+  }
 
   &:hover{
     background-image: url("/closeBtnGreen.svg");    

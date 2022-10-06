@@ -93,6 +93,20 @@
 
     background-color: #8C8C4C;
   }
+
+  @media (max-width: 426px) {
+    width: 85%;
+    
+    &:hover{
+      span{
+        transform: translateX(-10%);
+      }
+  
+      .ButtonArrow{
+        transform: translate(20%);
+      }
+    }
+  }
 }
 
 .AnimatedButtonContainerWhite{
@@ -139,5 +153,37 @@
     }
 
     background-color: #8C8C4C;
+  }
+
+  @media (max-width: 426px) {
+    width: 90%;
+  }
+
+  @media (max-width: 376px) {
+    width: 95%;
+
+    &:hover{
+      span{
+        transform: translateX(-10%);
+      }
+  
+      .ButtonArrow{
+        transform: translate(30%);
+      }
+    }
+  }
+
+  @media (max-width: 321px) {
+    width: 90%;
+
+    &:hover{
+      span{
+        transform: translateX(-5%);
+      }
+  
+      .ButtonArrow{
+        transform: translate(15%);
+      }
+    }
   }
 }

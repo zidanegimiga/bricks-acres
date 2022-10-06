@@ -1,53 +1,126 @@
-.heroContainer{
+.heroContainer {
   display: flex;
   background-color: #F3F3EB;
   justify-content: space-between;
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
+  padding-right: 132px;
+
+  @media(max-width: 1025px) {
+    padding-right: 64px;
+  }
+
+  @media(max-width: 769px) {
+    background-image: url("/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
-.heroLeft{
-  margin-left: 48px;
+.overlay {
+  display: none;
+
+  @media(max-width: 769px) {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    background: rgba(35, 35, 35, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+.heroLeft {
+  margin-left: 132px;
   width: 40%;
 
-  p{
+  p {
     text-align: left;
     font: normal normal bold 20px Lato;
     color: #8C8C4C;
   }
 
-  a{
+  a {
     text-decoration: none;
+  }
+
+  @media(max-width: 1441px) {
+    margin-left: 64px;
+  }
+
+  @media(max-width: 1025px) {
+    margin-left: 32px;
+  }
+
+  @media (max-width: 769px) {
+    z-index: 5;
+    width: 100%;
+    p{
+      color: #BFBF69;
+    }    
+  }
+
+  @media (max-width: 376px) {
+    margin-left: 16px;        
+    margin-right: 8px;        
   }
 }
 
-.title{
+.title {
   font: normal normal 900 60px Lato;
   color: #414037;
 
-  span{
+  @media(max-width: 1025px) {
+    font-size: 38px;
+  }
+
+  span {
     text-decoration: underline;
     color: #BFBF69;
   }
+
+  @media (max-width: 769px) {
+    color: #f5f5f5;
+    z-index: 5;   
+  }
 }
 
-.subHeading{
+.subHeading {
   text-align: left;
   font: normal normal bold 20px Lato;
   line-height: 34px;
   letter-spacing: 0px;
   color: #414037;
   margin-bottom: 32px;
+
+  @media (max-width: 769px) {
+    color: #f5f5f5;
+    font-family: Raleway;
+    font-weight: 500;
+    z-index: 5;
+  }
 }
 
-.heroRight{
+.heroRight {
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;
-  height: 900px;
+  height: 600px;
   position: absolute;
-  right: -5%;
-  top: 20%;
+  right: -10%;
+  top: 5%;
   z-index: 1;
+
+  @media(max-width: 1441px) {
+    height: 560px;
+    right: -1%;
+    top: 15%;
+    z-index: 1;
+  }
+
+  @media(max-width: 769px) {
+    display: none;
+  }
 }

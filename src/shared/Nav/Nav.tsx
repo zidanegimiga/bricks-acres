@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
 import {useRouter} from 'next/router'
@@ -6,6 +6,15 @@ import styles from './Nav.module.scss';
 import Button from 'shared/Button';
 
 const Nav = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const handleClick = () =>{
+    if(!menuOpen){
+      setMenuOpen(true);
+    } else {
+      setMenuOpen(false);
+    }
+  }
+  
   const router = useRouter();
   const contactRoute = (e) =>{
     e.preventDefault();
@@ -46,6 +55,31 @@ const Nav = () => {
           <Button text="SIGN UP" variant="fill" route="/#signUp"/>
         </div>
       </div>
+      <div className={styles.menuBtn} onClick={handleClick}>
+        <div className={menuOpen === true ? styles["menuBtnBurger"] +" "+ styles["open"] : styles.menuBtnBurger}>
+        </div>
+      </div>
+      { 
+        menuOpen && 
+        <div className={styles.menu}>
+          <div className={styles.menuItem}>
+            <Link href="/"><p>Home</p></Link>
+          </div>      
+          <div className={styles.menuItem}>
+            <Link href="/#aboutUs"><p>About us</p></Link>
+          </div>      
+          <div className={styles.menuItem}>
+            <Link href="/#ourSolution"><p>Our solution</p></Link>
+          </div>      
+          <div className={styles.menuItem}>
+            <Link href="/contact"><p>Contact us</p></Link>
+          </div>
+          <p>Get notified when the product launches? ☺</p>
+          <div className={styles.btnContainer}>
+            <Button text='Get notified' variant='fill' route="/#signUp"/>
+          </div>      
+        </div>
+      }
     </div>
   )
 }
