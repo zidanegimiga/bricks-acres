@@ -36,7 +36,8 @@
     }
 
     @media (max-width: 426px) {
-      font-size: 32px;    
+      font-size: 32px;
+      margin-right: 32px;    
     }
   }
 }
@@ -49,7 +50,8 @@
   margin-top: 56px;
 
   @media (max-width: 426px) {
-    font-size: 20px;    
+    font-size: 20px;
+    margin-top: 32px;    
   }
 }
 

@@ -10,7 +10,7 @@ $md-radio-ripple-size: 15px;
   justify-content: space-around;
   margin-bottom: 24px;
   margin-top: 24px;
-  @media (max-width: 321px) {
+  @media (max-width: 426px) {
     flex-direction: column;
     align-items: flex-start;   
   }
@@ -41,11 +41,11 @@ $md-radio-ripple-size: 15px;
 .checkboxWrapper input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
-  width: 1.6em;
-  height: 1.6em;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   margin-right: 0.5em;
-  border: 0.15em solid #707070;
+  border: 1px solid #707070;
   outline: none;
   background-color: #ffffff;
   cursor: pointer;
@@ -60,7 +60,6 @@ $md-radio-ripple-size: 15px;
   }
 
   @media (max-width: 426px) {
-    width: 100%;
     margin-bottom: 10px;    
   }
 }
@@ -81,6 +80,10 @@ $md-radio-ripple-size: 15px;
   &:focus {
     border: 2px solid #707070;
     box-shadow: none;
+  }
+
+  @media (max-width: 1441px) {
+    width: 95%;    
   }
 }
 

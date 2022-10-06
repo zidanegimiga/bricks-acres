@@ -36,10 +36,6 @@
   margin-left: 132px;
   width: 40%;
 
-  @media(max-width: 769px) {
-    width: 100%;
-  }
-
   p {
     text-align: left;
     font: normal normal bold 20px Lato;
@@ -60,9 +56,15 @@
 
   @media (max-width: 769px) {
     z-index: 5;
+    width: 100%;
     p{
       color: #BFBF69;
     }    
+  }
+
+  @media (max-width: 376px) {
+    margin-left: 16px;        
+    margin-right: 8px;        
   }
 }
 
