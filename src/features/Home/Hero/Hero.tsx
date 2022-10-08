@@ -14,7 +14,7 @@ const Hero = () => {
           <Button text="Notify me" variant="animated" route="/#signUp"/>
         </div>
         <div className={styles.heroRight}>
-          <Image src="/hero.png" alt="hero image" width={720} height={720}/>
+          <Image src="/hero.png" alt="hero image" width={48} height={48}/>
         </div>
         <div className={styles.overlay}></div>
     </div>
