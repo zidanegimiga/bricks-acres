@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'shared/Button';
-import Image from 'next/image'
-import styles from './Hero.module.scss'
+import Image from 'next/image';
+import styles from './Hero.module.scss';
 
 const Hero = () => {
   return (
