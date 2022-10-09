@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'shared/Button';
-import Image from 'next/image'
-import styles from './Hero.module.scss'
+import Image from 'next/image';
+import styles from './Hero.module.scss';
 
 const Hero = () => {
   return (
@@ -14,7 +14,7 @@ const Hero = () => {
           <Button text="Notify me" variant="animated" route="/#signUp"/>
         </div>
         <div className={styles.heroRight}>
-          <Image src="/hero.png" alt="hero image" width={48} height={48}/>
+          <Image src="/hero.png" alt="hero image" width={720} height={720}/>
         </div>
         <div className={styles.overlay}></div>
     </div>
